@@ -1,0 +1,54 @@
+{
+  "name": "cambrian-plugin",
+  "version": "1.0.0",
+  "description": "Telegram bot for Sei Network using Cambrian plugins, ERC20 tools, and optional AI integrations.",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "tsx src/bot.ts",
+    "dev": "tsx watch src/bot.ts",
+    "create-your-plugin": "tsx scripts/create-plugin.ts",
+    "test": "tsx test/test.ts"
+  },
+  "keywords": [
+    "sei",
+    "sei-agent-kit",
+    "ai",
+    "telegram-bot",
+    "cambrian"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@covalenthq/client-sdk": "^2.3.0",
+    "@google/generative-ai": "^0.24.1",
+    "@sei-js/evm": "^2.0.0",
+    "ai": "^4.1.44",
+    "axios": "^1.10.0",
+    "chart.js": "^4.4.8",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "openai": "^3.2.1",
+    "viem": "^2.23.3",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6",
+    "@types/chai": "^5.0.1",
+    "@types/node": "^22.10.2",
+    "@types/node-telegram-bot-api": "^0.64.9",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
